@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import HomePage from './components/homepage/HomePage'
+import Diskusi from './components/diskusi/Diskusi'
+import Kelas from './components/kelas/Kelas'
+import Portofolio from './components/portofolio/Portofolio'
+import Footer from './components/Footer'
+import DetailKelas from './components/kelas/DetailKelas'
+import Course from './components/kelas/Course'
+import { useStateValue } from './util/StateProvider'
+import Login from './util/Login'
 
 function App() {
+  const [{ user }, dispatch] = useStateValue()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!user ? (
+        <Login />
+      ) : (
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/kelas" exact>
+              <Kelas />
+            </Route>
+            <Route path="/portofolio">
+              <Portofolio />
+            </Route>
+            <Route path="/diskusi">
+              <Diskusi />
+            </Route>
+            <Route path="/kelas/:id" children={<DetailKelas />} exact></Route>
+            <Route path="/kelas/:id/course" children={<Course />} exact></Route>
+          </Switch>
+          <Footer />
+        </Router>
+      )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

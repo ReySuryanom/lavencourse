@@ -1,0 +1,36 @@
+.sliderCard {
+  border-radius: 5%;
+  box-shadow: 20px 20px 20px -16px rgb(243, 239, 239);
+  padding-bottom: 1rem;
+}
+
+.sliderCard > img.love {
+  margin-left: -5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sliderCard > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.sliderCard > div > p {
+  margin-left: 0.6rem;
+}
+
+.sliderCard .gambar {
+  margin-left: -2.5rem;
+}
+
+.sliderCard .name {
+  margin-left: -3.5rem;
+}
+
+.sliderCard .follow {
+  color: var(--primary-color);
+  font-weight: 700;
+  cursor: pointer;
+}

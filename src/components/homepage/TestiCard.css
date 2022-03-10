@@ -1,0 +1,33 @@
+.testiCard {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 19px;
+  width: 30%;
+  padding: 0.5rem;
+}
+
+.testiCard__left {
+  height: fit-content;
+  width: 20%;
+  margin: auto;
+  padding-left: 0.1rem;
+}
+
+.testiCard__left > .MuiAvatar-root {
+  border-radius: 100%;
+  border: 2px solid white;
+  width: 100%;
+  height: fit-content;
+}
+
+.testiCard__right {
+  padding-left: 1rem;
+  width: fit-content;
+}
+
+.testiCard__right > h3 {
+  line-height: 0%;
+}

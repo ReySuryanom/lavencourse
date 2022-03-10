@@ -1,0 +1,25 @@
+.jumbotron {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.jumbotron__left__side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron__left__side > h1 {
+  margin-top: 6rem;
+}
+.jumbotron__left__side > p {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.jumbotron__right_side {
+  width: 50%;
+}

@@ -1,0 +1,111 @@
+.diskusi {
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.diskusi .title {
+  text-align: center;
+  align-self: center;
+  width: 40%;
+}
+
+.dikusi__container {
+  margin: auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.diskusi__left {
+  width: 19%;
+}
+
+.btn.kategori {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--second-text);
+  padding: 0.4rem 1rem;
+}
+
+.btn.kategori:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.diskusi__right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.diskusi__input {
+  display: flex;
+  padding: 2rem;
+  height: fit-content;
+  margin-bottom: 3rem;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.diskusi__input > div {
+  margin-left: 1rem;
+}
+
+.input_field {
+  border: none;
+  background-color: #e9e9e9;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-text);
+  outline: none;
+}
+
+.diskusi__input > div > .diskusi__submit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.diskusi__submit .MuiSvgIcon-root,
+.diskusi__submit .btn {
+  cursor: pointer;
+}
+
+.diskusi__submit .btn {
+  margin: -1px 0;
+}
+
+.diskusi__post {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 29px 49px -12px rgb(243, 239, 239);
+}
+
+.clicked {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.loader {
+  margin: 0 auto;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

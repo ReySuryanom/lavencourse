@@ -1,0 +1,10 @@
+.postCards {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.postCards > .sliderCard {
+  margin-bottom: 3rem;
+}

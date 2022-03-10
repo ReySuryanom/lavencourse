@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 30px;
+  align-items: center;
+}
+
+.left__side > a > img {
+  width: 80px;
+  height: 80px;
+}
+
+.middle__side {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.middle__side > a {
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: large;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.middle__side > a:hover {
+  border-bottom: 2px solid #458ff6;
+  color: #8f8a99 !important;
+}
+
+.right__side {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text);
+}
+
+.right__side > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.right__side > h1 {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  color: var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.dropdown-content > a {
+  color: var(--primary-text) !important;
+}
+
+.dropdown-content {
+  margin-top: 1.8rem;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.active {
+  border-bottom: 2px solid #458ff6;
+  color: #8f8a99 !important;
+}

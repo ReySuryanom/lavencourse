@@ -1,0 +1,14 @@
+.question > .question__container {
+  margin-bottom: 5rem;
+}
+
+.diskusi__post > .question,
+.answer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.question > .question__container,
+.answer > .answer__container {
+  margin-left: 0.8rem;
+}

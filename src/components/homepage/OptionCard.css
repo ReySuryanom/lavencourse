@@ -1,0 +1,48 @@
+.optionCard {
+  color: var(--primary-text);
+  margin-top: 2rem;
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5%;
+  box-shadow: 20px 20px 20px -16px rgb(243, 239, 239);
+  padding: 1.4rem 2.2rem;
+}
+
+.optionCard > img {
+  align-self: center;
+}
+
+.optionCard__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionCard__icons > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -1.5rem;
+}
+
+.optionCard__icons > div > p {
+  margin-left: 0.4rem;
+}
+
+.optionCard__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.optionCard__avatar > div > p {
+  margin-left: 0.7rem;
+}
+.optionCard__avatar > div {
+  line-height: 20%;
+}
+
+.optionCard .btn {
+  align-self: center;
+  margin-top: 1.5rem;
+}

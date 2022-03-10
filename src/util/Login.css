@@ -1,0 +1,46 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.login > .daftar {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #176ae6;
+  color: #176ae6;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.login > .daftar:hover {
+  margin: -1;
+  background-color: #176ae6;
+  color: white !important;
+}
+
+.login > div > img {
+  margin-top: 4rem;
+  object-fit: contain;
+  height: 300px;
+}
+
+.login__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > button {
+  width: 300px;
+  background-color: #176ae6;
+  color: #eff2f5;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.login > button:hover {
+  background-color: #f1f2f5;
+  border: 1px solid #176ae6;
+  margin: -1;
+  color: #176ae6;
+}

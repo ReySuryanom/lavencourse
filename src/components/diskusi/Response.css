@@ -1,0 +1,12 @@
+.response {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.response > input {
+  margin-left: 1rem;
+}
+
+.response > .btn {
+  margin-left: 1rem;
+}

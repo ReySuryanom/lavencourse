@@ -1,0 +1,52 @@
+.detailKelas {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailKelas > .left__side {
+  width: 45%;
+}
+
+.detailKelas > .left__side > img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.detailKelas > .right__side {
+  width: 45%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.detailKelas > .right__side > p {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  padding: 0;
+  font-weight: 500;
+  font-family: 'Mulish', sans-serif !important;
+}
+
+.detailKelas > .right__side > h2 {
+  margin: 0;
+  font-weight: 700;
+  width: 80%;
+  font-size: 2.5rem;
+}
+
+.detailKelas .optionCard__icons {
+  width: 40vh;
+}
+
+.detailKelas .daftar {
+  color: white;
+  width: 80%;
+  padding: 1rem 0;
+  text-align: center;
+}
